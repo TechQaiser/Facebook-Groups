@@ -5,7 +5,7 @@
 
 <br>
 <p align="center">
-  <img src='https://github.com/TechQaiser/TechQaiser/blob/main/Facebook-Groups/2.png' width=800>
+  <img src='https://raw.githubusercontent.com/TechQaiser/TechQaiser/main/Facebook-Groups/Screenshot%202023-04-17%20025731.png' width=800>
 </p>
 
 ## Overview
