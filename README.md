@@ -1,5 +1,5 @@
 # Facebook-Groups
-Tool Used To Extract/Obtain Facebook Groups
+* Tool Used To Extract/Obtain Facebook Groups
 
 ## [[Facebook Groups Tool Project]](https://github.com/TechQaiser/Facebook-Groups)
 
