@@ -48,4 +48,4 @@ Open This Folder With Termux By Following Tips:
 
 # Contact
 <a href="https://www.facebook.com/meherdil.khan"><img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/facebook.svg" width="30px" height="30px"></a>
-<a href="https://www.youtube.com/channel/UCOaenAmj6A-bPrzT3ynDEbw"><img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/youtube.svg" width="37px" height="27px"></a>
+<a href="https://www.youtube.com/channel/UCOaenAmj6A-bPrzT3ynDEbw"><img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/youtube.svg" width="33px" height="27px"></a>
