@@ -24,15 +24,6 @@ cd Facebook-Tool
 python main.py
 ```
 
-# Change Default Options 
-* The First One Check The Post Per Day For Finding Active Groups.
-* The Second One Check Daily Posts At Groups To Find Auto Approvals Groups.
-```json
-{
-  "posts_per_day": 75,
-  "auto_approvals_posts": 100
-}
-```
 # Download Tool Directly
 ## Download Zip In Release Tag
 ``` 
@@ -45,6 +36,15 @@ Open This Folder With Command Prompt
 Open This Folder With Termux By Following Tips:
 1: Open Termux And Type cd <folder you download in your mobile path>
 2: Type python main.py 
+```
+# Change Default Options 
+* The First One Check The Post Per Day For Finding Active Groups.
+* The Second One Check Daily Posts At Groups To Find Auto Approvals Groups.
+```json
+{
+  "posts_per_day": 75,
+  "auto_approvals_posts": 100
+}
 ```
 ## Menus (Avalible Options In Tool)
 | Option | Describe | Need Login |
