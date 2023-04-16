@@ -47,4 +47,5 @@ Open This Folder With Termux By Following Tips:
 | **Extract auto approvals group** | You Can Use This Option To Get Multi Groups Lists Of Auto Approval Groups | x |
 
 # Contact
-## [Facebook](www.facebook.com/meherdil.khan)
+<a href="www.facebook.com/meherdil.khan"><img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/facebook.svg" width="30px" height="30px"></a>
+<a href="https://www.youtube.com/channel/UCOaenAmj6A-bPrzT3ynDEbw"><img src="https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/youtube.svg" width="37px" height="27px"></a>
