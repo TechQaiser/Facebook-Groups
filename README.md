@@ -23,3 +23,17 @@ git clone https//:github.com/TechQaiser/Facebook-Tool
 cd Facebook-Tool
 python main.py
 ```
+
+# Download Tool Directly
+## Download Zip In Release Tag
+``` 
+Open This Folder With Command Prompt
+1: Type cmd in folder Search Bar At Top
+2: Type python main.py in cmd 
+```
+## In Android Using Termux
+``` 
+Open This Folder With Termux By Following Tips:
+1: Open Termux And Type cd <folder you download in your mobile path>
+2: Type python main.py 
+```
