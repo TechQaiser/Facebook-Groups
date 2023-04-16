@@ -63,11 +63,10 @@ logo = f"""
           -> Contact : Github -->> @TechQaiser 
 {c * '-'}{stop}"""
 
-def end_result(file):
+def end_result():
     print(c * f'{lcyan}-{stop}')
     print(f'{lyellow} Process Sucessfully Completed {stop}')
     print(f'{lcyan} Total Groups Done {stop}{lgreen}{len(total)}{stop}')
-    print(f'{lcyan} File Saved In {stop}{lgreen}{file}{stop}')
     print(c * f'{lcyan}-{stop}')
     input("Press Enter To Go Back ! ")
     main_dashboard()
@@ -153,8 +152,7 @@ class main():
         self.file = open('input_data.txt', 'r').readlines()
         self.headers = headers_agents.headers1()
         self.headers2 = headers_agents.headers2()
-        self.filenm = datetime.datetime.now().strftime("%Y-%m-%d.%H.%M.%S")
-        self.namefile = open(f'data/{self.filenm}.txt','a',encoding='utf-8')
+        self.namefile = datetime.datetime.now().strftime("%Y-%m-%d.%H.%M.%S")
     def data_http(self, groups_name):
             data = {
                 "client_doc_id": "395907910716176498299001478287",
@@ -198,9 +196,9 @@ class main():
                         group_name = group_name
                     group_name = ''.join(c if unicodedata.category(c)[0] in ['L', 'N', 'Z'] else '?' for c in group_name)
                     print(f'{lgreen} SucessFully Obtained {yellow}{group_id}{stop} | {yellow}{group_name}{stop} ')
+                    open(f'data/{self.namefile}.txt','a',encoding='utf-8').write(group_id + '|' + group_name + '\n')
                     total.append(group_name)
-                    self.namefile.write(group_id + '|' + group_name + '\n')
-        end_result(self.filenm)
+        end_result()
 
     def group_by_id(self):
         if len(self.file) < 1:
@@ -227,10 +225,9 @@ class main():
                     group_name = ''.join(
                         c if unicodedata.category(c)[0] in ['L', 'N', 'Z'] else '?' for c in group_name)
                     print(f'{lgreen} SucessFully Obtained {yellow}{group_id}{stop} | {yellow}{group_name}{stop} ')
-                    self.namefile.write(group_id + '|' + group_name + '\n')
+                    open(f'data/{self.namefile}.txt','a',encoding='utf-8').write(group_id + '|' + group_name + '\n')
                     total.append(group_name)
-        end_result(self.filenm)
-
+        end_result()
 
     def group_by_country(self):
         print(f' {lpink} For Multiple Names Use Comma Example Kapil,Bigboss,Movies')
@@ -284,11 +281,11 @@ class main():
                                 c if unicodedata.category(c)[0] in ['L', 'N', 'Z'] else '?' for c in group_name)
                             print(f'{lgreen} SucessFully Obtained {yellow}{group_id}{stop} | {yellow}{group_name}{stop} ')
                             total.append(group_name)
-                            self.namefile.write(group_id + '|' + group_name + '\n')
+                            open(f'data/{self.namefile}.txt','a',encoding='utf-8').write(group_id + '|' + group_name + '\n')
                 except requests.exceptions.ConnectionError:
                     print(f'{red} Your network is slow due to that tool also work slow {stop}')
                     time.sleep(7)
-        end_result(self.filenm)
+        end_result()
 
 class main_nologin():
     def __init__(self):
@@ -297,8 +294,7 @@ class main_nologin():
         from developer_file_donot_open import headers_agents
         self.config = json.load(open('config.json', 'r'))
         self.headers2 = headers_agents.headers2()
-        self.filenm = datetime.datetime.now().strftime("%Y-%m-%d.%H.%M.%S")
-        self.namefile = open(f'data/{self.filenm}.txt', 'a', encoding='utf-8')
+        self.namefile = datetime.datetime.now().strftime("%Y-%m-%d.%H.%M.%S")
         self.file = open('input_data.txt', 'r').readlines()
 
     def extract_pure_active(self):
@@ -318,7 +314,7 @@ class main_nologin():
                 if int(posts_per_day) > int(minimum_posts_per_day):
                     total.append(group_name)
                     print(f'{lpink} Extracted {yellow}{group_id}{stop} | {yellow}{group_name}{stop} | {lgreen}Active{stop} | {yellow}{total_members}{stop}')
-                    self.namefile.write(group_id + '|' + group_name + '|' + 'Active' + '|' + total_members + '\n')
+                    open(f'data/{self.namefile}.txt','a',encoding='utf-8').write(group_id + '|' + group_name + '|' + 'Active' + '|' + total_members + '\n')
                 else:
                     print(f'{lpink} Extracted {yellow}{group_id}{stop} | {yellow}{group_name}{stop} | {lred}Deadzz{stop} | {yellow}{total_members}{stop}')
             except IndexError:
@@ -326,7 +322,7 @@ class main_nologin():
             except requests.exceptions.ConnectionError:
                 print(f'{red} Your network is slow due to that tool also work slow {stop}')
                 time.sleep(7)
-        end_result(self.filenm)
+        end_result()
 
     def extract_auto_approval(self):
         minimum_posts_per_day = self.config['auto_approvals_posts']
@@ -345,7 +341,7 @@ class main_nologin():
                 if int(posts_per_day) > int(minimum_posts_per_day):
                     total.append(group_name)
                     print(f'{lpink} Extracted {yellow}{group_id}{stop} | {yellow}{group_name}{stop} | {lgreen}Auto Approval{stop} | {yellow}{total_members}{stop}')
-                    self.namefile.write(group_id + '|' + group_name + '|' + 'Auto Approve' + '|' + total_members + '\n')
+                    open(f'data/{self.namefile}.txt','a',encoding='utf-8').write(group_id + '|' + group_name + '|' + 'Auto Approve' + '|' + total_members + '\n')
                 else:
                     print(f'{lpink} Extracted {yellow}{group_id}{stop} | {yellow}{group_name}{stop} | {lred}Admin Approval{stop} | {yellow}{total_members}{stop}')
             except IndexError:
@@ -353,7 +349,7 @@ class main_nologin():
             except requests.exceptions.ConnectionError:
                 print(f'{red} Your network is slow due to that tool also work slow {stop}')
                 time.sleep(7)
-        end_result(self.filenm)
+        end_result()
 
 
 if __name__ == '__main__':
