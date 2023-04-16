@@ -37,3 +37,11 @@ Open This Folder With Termux By Following Tips:
 1: Open Termux And Type cd <folder you download in your mobile path>
 2: Type python main.py 
 ```
+## Menus (Avalible Options In Tool)
+| Option | Describe | Need Login |
+| -- | -- | -- |
+| **Extract groups by names, keywords** | You Can Use This Option To Get Multi Groups Lists By Typing Names Of Group | ✓ |
+| **Extract groups by other groups ids** | You Can Use This Option To Get Multi Groups Lists By Using Groups Ids | ✓ |
+| **Extract groups by names with countries** | You Can Use This Option To Get Multi Groups Lists By Typing Names Of Groups & Filter Country | ✓ |
+| **Extract highly pure active group** | You Can Use This Option To Get Multi Lists Of Active Groups | x |
+| **Extract auto approvals group** | You Can Use This Option To Get Multi Groups Lists Of Auto Approval Groups | x |
