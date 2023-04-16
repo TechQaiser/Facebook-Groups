@@ -13,3 +13,13 @@ The GRoup Extractor Tool Help To Extract Groups On Facebook (Any Content Groups)
 
 ## Enviroment Setup
 Install `Facebook Group Tool` On Your Device
+
+# Install Tool Using Python/Termux/Linux : 
+```
+pkg update
+pkg install git
+pkg install python
+git clone https//:github.com/TechQaiser/Facebook-Tool
+cd Facebook-Tool
+python main.py
+```
