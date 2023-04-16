@@ -9,7 +9,7 @@
 </p>
 
 ## Overview
-The GRoup Extractor Tool Help To Extract Groups On Facebook (Any Content Groups) , This Tool Is Mainly Designed For Facebook Instream Ads To Help You To Find Groups Where You Can Share Your Videos , Also You Can Check The Groups You Extracted Is Active Or Not Either You Can Use Option Help To Check Groups Privacy To Admin Posts Or Auto Approval Posts  
+The Group Extractor Tool Help To Extract Groups On Facebook (Any Content Groups) , This Tool Is Mainly Designed For Facebook Instream Ads To Help You To Find Groups Where You Can Share Your Videos , Also You Can Check The Groups You Extracted Is Active Or Not Either You Can Use Option Help To Check Groups Privacy To Admin Posts Or Auto Approval Posts  
 
 ## Enviroment Setup
 Install `Facebook Group Tool` On Your Device
@@ -24,6 +24,15 @@ cd Facebook-Tool
 python main.py
 ```
 
+# Change Default Options 
+* The First One Check The Post Per Day For Finding Active Groups.
+* The Second One Check Daily Posts At Groups To Find Auto Approvals Groups.
+```json
+{
+  "posts_per_day": 75,
+  "auto_approvals_posts": 100
+}
+```
 # Download Tool Directly
 ## Download Zip In Release Tag
 ``` 
