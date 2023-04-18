@@ -19,7 +19,7 @@ Install `Facebook Group Tool` On Your Device
 pkg update
 pkg install git
 pkg install python
-git clone https//:github.com/TechQaiser/Facebook-Tool
+git clone https://github.com/TechQaiser/Facebook-Tool
 cd Facebook-Tool
 python main.py
 ```
