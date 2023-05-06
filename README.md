@@ -18,9 +18,9 @@ Unable comming soon for android / linux
 
 # Download Tool Directly
 ## Download Zip In Release Tag For Windows 10 Only
-``` 
-https://github.com/TechQaiser/Facebook-Groups/releases/tag/version2
-```
+
+<a href='https://github.com/TechQaiser/Facebook-Groups/releases/tag/version2'>Click Here To Download</a>
+
 ## In Android Using Termux
 ``` 
 Unable Now Soon It Will Update
