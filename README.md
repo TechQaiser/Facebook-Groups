@@ -5,45 +5,35 @@
 
 <br>
 <p align="center">
-  <img src='https://raw.githubusercontent.com/TechQaiser/TechQaiser/main/Facebook-Groups/Screenshot%202023-04-17%20025731.png' width=800>
+  <img src='https://github.com/TechQaiser/TechQaiser/blob/main/Facebook-Groups/Screenshot%202023-05-06%20155105.png?raw=true' width=800>
 </p>
 
 ## Overview
 The Group Extractor Tool Help To Extract Groups On Facebook (Any Content Groups) , This Tool Is Mainly Designed For Facebook Instream Ads To Help You To Find Groups Where You Can Share Your Videos , Also You Can Check The Groups You Extracted Is Active Or Not Either You Can Use Option Help To Check Groups Privacy To Admin Posts Or Auto Approval Posts  
 
-## Enviroment Setup
-Install `Facebook Group Tool` On Your Device
-
-# Install Tool Using Python/Termux/Linux : 
+# Use in /Termux Android/Linux Os : 
 ```
-pkg update
-pkg install git
-pkg install python
-git clone https://github.com/TechQaiser/Facebook-Tool
-cd Facebook-Tool
-python main.py
+Unable comming soon for android / linux
 ```
 
 # Download Tool Directly
-## Download Zip In Release Tag
+## Download Zip In Release Tag For Windows 10 Only
 ``` 
-Open This Folder With Command Prompt
-1: Type cmd in folder Search Bar At Top
-2: Type python main.py in cmd 
+https://github.com/TechQaiser/Facebook-Groups/releases/tag/version2
 ```
 ## In Android Using Termux
 ``` 
-Open This Folder With Termux By Following Tips:
-1: Open Termux And Type cd <folder you download in your mobile path>
-2: Type python main.py 
+Unable Now Soon It Will Update
 ```
 # Change Default Options 
-* The First One Check The Post Per Day For Finding Active Groups.
-* The Second One Check Daily Posts At Groups To Find Auto Approvals Groups.
+* The First One Value is Set to find groups with how much page means if user put name like Qsr and value is 2 it will extract two pages data.
+* The Second One Check The Post Per Day For Finding Active Groups and auto approval.
+* The Third One Check The Minimum Members in group For Finding Groups That You Want if member less then 10,000.
 ```json
 {
-  "posts_per_day": 75,
-  "auto_approvals_posts": 100
+  "pages_for_single_group": 2,
+  "posts_per_day": 5,
+  "minimum_members_group": 10000
 }
 ```
 ## Menus (Avalible Options In Tool)
