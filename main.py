@@ -113,14 +113,14 @@ def logo():
    Tool Status  : [white]Working Enjoy[/white]
    License      : [white]Approved[/white]
 """
-    detail = Panel(f"[#d78700]{details}", style='#afffff', title='[#d700d7]Social Media')
+    detail = Panel(f"[#d78700]{details}", style='#afffff', title='[#d700d7]Tool Status')
     abouts = """
    Facebook : Qaiser Abbas
    Telegram : @ASHUInsights
    Github   :  TechQaiser
    Youtube : Tech Qaiser
 """
-    about = Panel(f"[#d78700]{abouts}", style='#afffff', title='[#d700d7]Tool Status')
+    about = Panel(f"[#d78700]{abouts}", style='#afffff', title='[#d700d7]Social Media')
     columns = Columns([detail, about], expand=True)
     cpr(lo)
     cpr(columns)
