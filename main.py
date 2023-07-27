@@ -22,6 +22,7 @@ except ModuleNotFoundError:
 console = Console()
 cpr = console.print
 stm("mode con: cols=96")
+open('modules/.username.txt', 'a')
 next_pages = []
 total = []
 
